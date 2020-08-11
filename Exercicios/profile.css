@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightskyblue;
+}
+
+#back{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    
+}
+
+.perfil .pPhoto{
+    position: relative;
+    float: left;
+    width: 12em;
+    height: 12em;
+    margin-top: -7.5%;
+    margin-left: 7.5%;
+}
+
+.perfil a{
+    float: right;
+    margin-right: 1.5em;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    padding: 1em;
+    background-color: blue;
+}
+
+.perfil h1{
+    text-align: center;
+    margin: 1em 8em;
+    justify-content: center;
+    font: 700 3em Verdana;
+    text-decoration: underline;
+    color: whitesmoke;
+}
+
+.geral{
+    text-align: center;
+    margin: 6em 1.5em;
+    font-size: 1.4em;
+    padding: 0 8em;
+}
+
+span{
+    color: blue;
+    font-family: Arial;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.hobby{
+    text-align: left;
+    margin: 6em 1.5em;
+    font-size: 1.4em;
+    margin-left: 6em;
+}
