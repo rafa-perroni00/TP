@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./form.css">
+    <script src="./scripts.js"></script>
+    <title>05_forms</title>
+</head>
+<body>
+    <div class="container-principal">
+        <h1>Cadastre seu curriculo</h1>
+    <form name="formulario" method="POST">
+        <h2>1. Dados Pessoais</h2>
+            
+        <div class="sec">
+               <div class="title"><label for="name">Nome</label></div>
+               <div class="normal"><input type="text" id="name" name="name" placeholder="Digite seu nome" required></div>
+        </div>
+            
+            <div class="sec">
+                <div class="title"><label for="date">Data de Nascimento</label></div>
+                <div class="normal"><input type="date" id="date" name="date"></div>
+            </div>
+            
+        <div class="sec">
+                <div class="title"><label for="civil">Estado Civil</label></div>
+                <div class="normal">
+                    <select type="civil" id="civil" name="civil">
+                        <option value="0">Estado Civil</option>
+                        <option value="1">Solteiro</option>
+                        <option value="2">Casado</option>
+                        <option value="3">Viuvo</option>
+                        <option value="4">Divorciado</option>
+                    </select>
+                </div>
+        </div>
+
+            <div class="sec">
+                <div class="title"><label>Sexo</label></div> 
+                <div class="normal">
+                    <input class="i-radio" type="radio" name="male" id="male">
+                    <label for="male">Masculino</label>
+                    <input class="i-radio" type="radio" name="female" id="female">
+                    <label for="female">Feminino</label>
+                </div>
+            </div>
+            
+
+        <h2>2. Objetivo</h2>
+            <div class="sec">
+                <div class="title"><label for="objetivo">Objetivo</label></div>
+                <div class="normal"><input type="textare" id="objetivo" name="objetivo" placeholder="Digite seu objetivo" required></div>
+            </div>
+
+        <h2>3. Contato</h2>
+            
+            <div class="sec">
+                <div class="title"><label for="end">Endereco</label></div>
+                <div class="normal"><input type="text" placeholder="Digite seu endereco" required></div>
+            </div>
+
+        <div class="sec">
+                <div class="title"> <label for="city">Cidade/Estado</label></div>
+                <div class="normal">
+                    <input type="text" placeholder="Digite sua Cidade" required>
+                    <p>/</p>
+                    <input type="text" placeholder="Digite seu Estado" required pattern="[A-Z]{2}">
+                </div>
+        </div>
+
+            <div class="sec">
+                <div class="title"><label for="cep">CEP</label></div>
+                <div class="normal"><input type="text" name="cep" id="cep" placeholder="Digite seu CEP no formato 00000-000" required pattern="[0-9]{5}[\-][0-9]{3}"></div>
+            </div>
+
+            <div class="sec">
+                <div class="title"><label for="cellphone">Telefone</label></div>
+                <div class="normal"><input type="number" name="cellphone" id="cellphone" placeholder="Digite seu telefone no formato (00)00000-0000" required pattern="[\(][0-9]{2}[\)][0-9]{5}[\-][0-9]{4}"></div>
+            </div>
+
+            <div class="sec">
+                <div class="title"><label for="email">E-Mail</label></div>
+                <div class="normal"><input type="email" name="email" id="email" placeholder="Digite seu e-mail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"></div>
+            </div>
+
+            <div class="sec">
+                <div class="title"><label for="social">Redes Sociais</label></div>
+                <div class="normal2">
+                    <div class="sec">
+                        <img src="./face.png" alt="">
+                        <p>https://facebook.com/</p>
+                        <input type="text" name="facebook" id="facebook" placeholder="Perfil do Facebook">
+                </div>
+                
+                <div class="sec">
+                        <img class="logo" src="./linkedin.png" alt="">
+                        <p>https://linkdin.com/</p>
+                        <input type="text" name="linkdin" id="linkdin" placeholder="Perfil do Linkdin">
+                </div>
+                    
+                <div class="sec">
+                        <img class="logo" src="./skype.png" alt="">
+                        <input type="text" name="skype" id="skype" placeholder="Perfil do Skype">
+                </div>
+                </div>
+            </div>
+
+        <h2>4. Conhecimentos</h2>
+            <div class="sec">
+                <div class="title"><label>Linguagens de Programacao</label></div>
+
+                <div class="normal2">
+                   <div class="op">
+                        <input type="checkbox" id="c" name="c">
+                        <label for="c">C/C++</label>
+                   </div>
+    
+                    <div class="op">
+                        <input type="checkbox" id="java" name="java">
+                        <label for="java">Java</label>
+                    </div>
+    
+                   <div class="op">
+                        <input type="checkbox" id="visual" name="visual">
+                        <label for="visual">Visual Basic</label>
+                   </div>
+    
+                    <div class="op">
+                        <input type="checkbox" id="net" name="net">
+                        <label for="net">.Net</label>
+                    </div>
+    
+                    <div class="op">
+                        <input type="checkbox" id="php" name="php">
+                        <label for="php">PHP</label>
+                    </div>
+    
+                    <div class="op">
+                        <input type="checkbox" id="python" name="python">
+                        <label for="python">Python</label>    
+                    </div>
+                    
+                    <div class="op">
+                        <input type="checkbox" id="html" name="html">
+                        <label for="html">HTML</label>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="sec">
+                <div class="title"><label>Idiomas</label></div>
+
+                <div class="normal">
+                        <label class="lang">Ingles</label>
+                    <select name="idioma1" id="idioma1">
+                        <option value="0">Nivel</option>
+                        <option value="3">Avancado</option>
+                        <option value="2">Intermediario</option>
+                        <option value="1">Basico</option>
+                    </select>
+
+                        <label class="lang">Espanhol</label>
+                    <select name="idioma2" id="idioma2">
+                        <option value="0">Nivel</option>
+                        <option value="3">Avancado</option>
+                        <option value="2">Intermediario</option>
+                        <option value="1">Basico</option>
+                    </select>
+                </div>
+            </div>
+            <div class="buttons">
+                <button type="submit" value="submit">Concluir</button>
+                <button onClick="cleanForm()">Limpar</button>
+            </div>
+            
+
+        </form>
+    </div>
+</body>
+</html>
