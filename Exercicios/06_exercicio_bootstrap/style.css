@@ -1,0 +1,70 @@
+body{
+    background-color: #343A34;
+}
+
+.d-block,w-100{
+    height: 40em;
+}
+
+h1{
+    margin: 1px auto;
+    color: white;
+}
+
+.part{
+    margin-top: 5em;
+    display: inline-flex;
+}
+
+.imgbox{
+    width: 50%;
+    height: auto;
+}
+
+.imgbox img{
+    width: 100%;
+    padding-left: 2em;
+}
+
+.textbox{
+    padding-left: 3em;
+    width: 50%;
+}
+
+.textbox h2{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: underline;
+    color: white;
+    margin: 0;
+}
+
+.textbox p{
+    margin-top: 0.5em;
+    text-align: justify;
+    color: white;
+    font-size: 1rem;
+    padding-right: 2em;
+}
+
+.textbox h3{
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: underline;
+    color: white;
+    margin: 0 0 0.5em 0
+}
+
+.textbox li{
+    color: white;
+    font-size: 1rem;
+}
+
+.vid{
+    margin: 4em 0;
+    padding: 0 3em;
+}
+
+
